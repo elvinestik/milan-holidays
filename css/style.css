@@ -5,13 +5,11 @@ body {
     line-height: 18px;
     background-image: url(/css/bckg/background\ 1.png);
     background-size: 100%;
+    min-height: 108vh;
 }
-path {
-    fill:inherit;
-    stroke:inherit;
-}
+
 .container {
-    width: 1366px;
+    width: 1030px;
     margin: 0 auto;
 }
 
@@ -20,8 +18,6 @@ path {
     justify-content: space-between;
     align-items: center;
     padding-top: 46px;
-    padding-right: 177px;
-    padding-left: 161px;
     padding-bottom: 22px;
 }
 
@@ -92,8 +88,6 @@ path {
 
 
 .main {
-    padding-left: 165px;
-    padding-right: 178px;
     margin-bottom: 49px;
 }
 
@@ -113,13 +107,9 @@ path {
     position: relative;
     justify-content: center;
 }
-
-.main-variants__link {
-    text-decoration: none;
-    color: #fff;
-    display: block;
+.main-variants__variant-card {
+    position: relative;
 }
-
 
 .main-variants__variant-img {
     width: 300px;
@@ -134,10 +124,7 @@ path {
     gap: 8px;
     padding-bottom: 12px;
     position: absolute;
-    left:0;
-    bottom: 43px;
-    right:0;
-    top:168px;
+    bottom: 0px;
     display: none;
     height: 40px;
 }
@@ -173,6 +160,7 @@ path {
     font-size: 14px;
     line-height: 14px;
     color: #fff;
+    text-decoration: none;
 }
 
 .main-variants__variant-details-link:after
@@ -189,18 +177,18 @@ path {
 }
 
 
-.main-variants__variant-title a {
+.main-variants__variant-title {
     text-decoration: none;
     color: #fff;
 }
 
-.main-variants__link:hover .main-variants__variant-title{
+.main-variants__variant:hover .main-variants__variant-title {
     text-decoration: none;
     color: #F26522;
 }
 
 
-.main-variants__link:hover .main-variants__variant-prewiew-hover{
+.main-variants__variant:hover .main-variants__variant-prewiew-hover{
     display: flex;
 }
 
