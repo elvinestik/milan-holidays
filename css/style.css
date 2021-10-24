@@ -91,7 +91,7 @@ body {
     margin-bottom: 49px;
 }
 
-.main-variants {
+.main-cards {
     display: grid;
     grid-template-columns: repeat(3, 300px);
     grid-template-rows: repeat(2, auto);
@@ -99,7 +99,7 @@ body {
     column-gap: 61px;
 }
 
-.main-variants__variant {
+.main-variant {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -107,16 +107,16 @@ body {
     position: relative;
     justify-content: center;
 }
-.main-variants__variant-card {
+.main-variant__prewiev-card {
     position: relative;
 }
 
-.main-variants__variant-img {
+.main-variant__prewiev__img {
     width: 300px;
     height: 220px;
 }
 
-.main-variants__variant-prewiew-hover {
+.main-variant__hover {
     display: flex;
     width: 100%;
     flex-direction: column;
@@ -129,7 +129,7 @@ body {
     height: 40px;
 }
 
-.main-variants__variant-start-price {
+.main-variant__hover-price {
     font-style: normal;
     font-weight: normal;
     font-size: 10px;
@@ -139,13 +139,13 @@ body {
     padding-top: 7px;
 }
 
-.main-variants__variant-details {
+.main-variant__hover-details {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.main-variants__variant-details-price {
+.main-variant__hover-details-price {
     padding-left: 16px;
     font-style: normal;
     font-weight: normal;
@@ -154,7 +154,7 @@ body {
     color: #fff;
 }
 
-.main-variants__variant-details-link {
+.main-variant__hover-details-link {
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -163,7 +163,7 @@ body {
     text-decoration: none;
 }
 
-.main-variants__variant-details-link:after
+.main-variant__hover-details-link:after
 {
     content: "";
     transform: rotate(-45deg);
@@ -177,22 +177,9 @@ body {
 }
 
 
-.main-variants__variant-title {
+.main-variant__prewiev-title {
     text-decoration: none;
     color: #fff;
-}
-
-.main-variants__variant:hover .main-variants__variant-title {
-    text-decoration: none;
-    color: #F26522;
-}
-
-
-.main-variants__variant:hover .main-variants__variant-prewiew-hover{
-    display: flex;
-}
-
-.main-variants__variant-title {
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -200,6 +187,16 @@ body {
     color: #fff;
     text-align: center;
     padding-top: 20px;
+}
+
+.main-variant:hover .main-variant__prewiev-title {
+    text-decoration: none;
+    color: #F26522;
+}
+
+
+.main-variant:hover .main-variant__hover{
+    display: flex;
 }
 
 .footer {
